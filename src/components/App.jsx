@@ -34,6 +34,13 @@ function App() {
     localStorage.setItem('wprowadzoneDane', JSON.stringify([...wprowadzoneDane, noweDane]));
   };
 
+  const usunMiesiac = (index) => {
+    const nowaLista = [...wprowadzoneDane];
+    nowaLista.splice(index, 1);
+    setWprowadzoneDane(nowaLista);
+    localStorage.setItem('wprowadzoneDane', JSON.stringify(nowaLista));
+  };
+
   return (
     <div className="container">
       <h1>Rozdzielanie Zarobków</h1>
@@ -53,6 +60,7 @@ function App() {
             <th>Potrzeby</th>
             <th>Oszczędności</th>
             <th>Zachcianki</th>
+            <th>Akcje</th>
           </tr>
         </thead>
         <tbody>
@@ -63,6 +71,9 @@ function App() {
               <td>{dane.potrzeby} zł</td>
               <td>{dane.oszczednosci} zł</td>
               <td>{dane.zachcianki} zł</td>
+              <td>
+                <button onClick={() => usunMiesiac(index)}>Usuń</button>
+              </td>
             </tr>
           ))}
         </tbody>
