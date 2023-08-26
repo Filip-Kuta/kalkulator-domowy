@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kalkulator-domowy/static/css/main.3cac9d66.css",
+    "main.js": "/kalkulator-domowy/static/js/main.c6db4c72.js",
+    "index.html": "/kalkulator-domowy/index.html",
+    "main.3cac9d66.css.map": "/kalkulator-domowy/static/css/main.3cac9d66.css.map",
+    "main.c6db4c72.js.map": "/kalkulator-domowy/static/js/main.c6db4c72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cac9d66.css",
+    "static/js/main.c6db4c72.js"
+  ]
+}
