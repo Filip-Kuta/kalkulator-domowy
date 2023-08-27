@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kalkulator-domowy/static/css/main.aa876ca6.css",
+    "main.css": "/kalkulator-domowy/static/css/main.a51416dd.css",
     "main.js": "/kalkulator-domowy/static/js/main.a5454a7c.js",
     "index.html": "/kalkulator-domowy/index.html",
-    "main.aa876ca6.css.map": "/kalkulator-domowy/static/css/main.aa876ca6.css.map",
+    "main.a51416dd.css.map": "/kalkulator-domowy/static/css/main.a51416dd.css.map",
     "main.a5454a7c.js.map": "/kalkulator-domowy/static/js/main.a5454a7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa876ca6.css",
+    "static/css/main.a51416dd.css",
     "static/js/main.a5454a7c.js"
   ]
 }
