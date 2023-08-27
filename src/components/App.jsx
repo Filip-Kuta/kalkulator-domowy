@@ -35,10 +35,13 @@ function App() {
   };
 
   const usunMiesiac = (index) => {
-    const nowaLista = [...wprowadzoneDane];
-    nowaLista.splice(index, 1);
-    setWprowadzoneDane(nowaLista);
-    localStorage.setItem('wprowadzoneDane', JSON.stringify(nowaLista));
+    const confirmDelete = window.confirm("Czy na pewno chcesz usunąć ten miesiąc?");
+    if (confirmDelete) {
+      const nowaLista = [...wprowadzoneDane];
+      nowaLista.splice(index, 1);
+      setWprowadzoneDane(nowaLista);
+      localStorage.setItem('wprowadzoneDane', JSON.stringify(nowaLista));
+    }
   };
 
   const handleEnterKeyPress = (event) => {
