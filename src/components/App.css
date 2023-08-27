@@ -1,62 +1,96 @@
 /* src/App.css */
 
+/* Styl bazowy dla wszystkich urządzeń */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 600px; /* Added max-width for responsiveness */
+  width: 90%; /* Added width for responsiveness */
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0; /* Adjusted margin for responsiveness */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px 0; /* Adjusted margin for responsiveness */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Media Queries dla tabletów (szerokość mniejsza lub równa 768px) */
+@media (max-width: 768px) {
   .container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    max-width: 80%; /* Dostosuj szerokość kontenera */
   }
-  
-  h1 {
-    color: #333;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
+
   input {
-    width: 100px;
-    padding: 5px;
-    margin: 10px;
+    margin: 5px 0; /* Dostosuj margin dla mniejszych urządzeń */
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 5px;
-  }
-  
+
   table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    font-size: 14px; /* Dostosuj rozmiar czcionki w tabeli */
   }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+}
+
+/* Media Queries dla telefonów (szerokość mniejsza lub równa 480px) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%; /* Dostosuj szerokość kontenera */
+    padding: 10px; /* Dostosuj padding dla mniejszych urządzeń */
   }
-  
-  th {
-    background-color: #007bff;
-    color: #fff;
+
+  input {
+    margin: 5px 0; /* Dostosuj margin dla mniejszych urządzeń */
+    width: 100%; /* Dostosuj szerokość inputów */
   }
-  
+
+  table {
+    font-size: 12px; /* Dostosuj rozmiar czcionki w tabeli */
+  }
+}

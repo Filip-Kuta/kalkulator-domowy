@@ -41,6 +41,12 @@ function App() {
     localStorage.setItem('wprowadzoneDane', JSON.stringify(nowaLista));
   };
 
+  const handleEnterKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      dodajDane();
+    }
+  };
+
   return (
     <div className="container">
       <h1>Rozdzielanie Zarobków</h1>
@@ -49,6 +55,7 @@ function App() {
         type="number"
         value={zarobki}
         onChange={(e) => setZarobki(parseFloat(e.target.value))}
+        onKeyPress={handleEnterKeyPress} // Obsługa naciśnięcia klawisza Enter
       />
       <button onClick={dodajDane}>Dodaj</button>
 
